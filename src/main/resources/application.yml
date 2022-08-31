@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: comics-service
+
+cloud:
+  aws:
+    stack:
+      auto: false
+      enabled: false
+    region:
+      static: us-west-1
+    dynamodb:
+      url: http://${DYNAMODB_URL:localhost}:4566
