@@ -1,5 +1,30 @@
 # Single Table Design + Spring Boot
 
+<p align="center">
+    <img src="./files/logo-spring-dynamodb.png" width="500"/>
+    <br />
+    <br />
+    <a href="https://github.com/jjeanjacques10/spring-dynamodb-single-table-design/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jjeanjacques10/spring-dynamodb-single-table-design/issues">Request Feature</a>
+</p>
+
+<p align="center">
+   <a href="https://www.linkedin.com/in/jjean-jacques10/">
+      <img alt="Jean Jacques Barros" src="https://img.shields.io/badge/-JeanJacquesBarros-6DB33F?style=flat&logo=Linkedin&logoColor=white" />
+   </a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/jjeanjacques10/spring-dynamodb-single-table-design?color=6DB33F">
+
+  <a href="https://github.com/jjeanjacques10/spring-dynamodb-single-table-design/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jjeanjacques10/spring-dynamodb-single-table-design?color=6DB33F">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-s">
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/jjeanjacques10/spring-dynamodb-single-table-design?color=6DB33F" />
+  <a href="https://github.com/jjeanjacques10/spring-dynamodb-single-table-design/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/jjeanjacques10/spring-dynamodb-single-table-design?color=6DB33F&logo=github">
+  </a>
+</p>
+
 Demo project for Spring Boot + DynamoDB Single Table Design
 
 ## Tecnologies
@@ -10,7 +35,7 @@ Demo project for Spring Boot + DynamoDB Single Table Design
 
 **Libs**
 
-- AWS Java SDK Dynamodb
+- [AWS Java SDK Dynamodb](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CodeSamples.Java.html)
 - Dynamodb Enhanced
 
 ## Table
@@ -18,6 +43,16 @@ Demo project for Spring Boot + DynamoDB Single Table Design
 Access **tb_comics** in [./environment/dynamodb/tables.json](./environment/dynamodb/tables.json)
 
 <img src="./files/table.png"/>
+
+## Get Started
+
+Create Table in DynamoDb simulator using Localstack.
+
+``` bash
+docker-compose up -d --build
+```
+
+- Access DynamoDb Admin: http://localhost:8001/
 
 ## Request Examples
 
@@ -30,4 +65,4 @@ curl --location --request GET 'http://localhost:8080/character/profile/greenlant
 ```
 
 ---
-Developed by [jjeanjacques10]()
+Developed by [Jean Jacques Barros](https://github.com/jjeanjacques10)
