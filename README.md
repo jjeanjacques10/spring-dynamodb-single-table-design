@@ -64,5 +64,11 @@ docker-compose up -d --build
 curl --location --request GET 'http://localhost:8080/character/profile/greenlantern'
 ```
 
+## References
+
+- [The What, Why, and When of Single-Table Design with DynamoDB](https://www.alexdebrie.com/posts/dynamodb-single-table/)
+- [Amazon DynamoDB single-table design using DynamoDBMapper and Spring Boot](https://aws.amazon.com/blogs/database/amazon-dynamodb-single-table-design-using-dynamodbmapper-and-spring-boot/)
+- [Single-table vs. multi-table design in Amazon DynamoDB](https://aws.amazon.com/blogs/database/single-table-vs-multi-table-design-in-amazon-dynamodb/)
+
 ---
 Developed by [Jean Jacques Barros](https://github.com/jjeanjacques10)
