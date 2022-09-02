@@ -64,6 +64,13 @@ docker-compose up -d --build
 curl --location --request GET 'http://localhost:8080/character/profile/greenlantern'
 ```
 
+## Notes
+
+- You can't use ``begin_with`` with PartitionKey, you can only use on the SortKey.
+- Primary keys in DynamoDB can be either simple or composite.
+    - Simple primary keys are consist of a partition key and no sort key.
+    - Composite primary keys have both a partition key and a sort key.
+
 ## References
 
 - [The What, Why, and When of Single-Table Design with DynamoDB](https://www.alexdebrie.com/posts/dynamodb-single-table/)
