@@ -1,56 +1,154 @@
 {
-  "character": [
+  "tb_comics": [
     {
-      "PK": "CHARACTER#greenlantern",
-      "SK": "PROFILE#greenlantern",
-      "nickname": "greenlantern",
-      "name": "Green Lantern",
-      "real_name": "Hal Jordan",
-      "description": "Harold 'Hal' Jordan, one of the characters known as Green Lantern, is a superhero appearing in American comic books published by DC Comics.",
-      "age": 28
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "CHARACTER#greenlantern"
+          },
+          "SK": {
+            "S": "PROFILE#greenlantern"
+          },
+          "nickname": {
+            "S": "greenlantern"
+          },
+          "name": {
+            "S": "Green Lantern"
+          },
+          "real_name": {
+            "S": "Hal Jordan"
+          },
+          "description": {
+            "S": "Harold 'Hal' Jordan, one of the characters known as Green Lantern, is a superhero appearing in American comic books published by DC Comics."
+          },
+          "age": {
+            "N": "28"
+          }
+        }
+      }
     },
     {
-      "PK": "CHARACTER#batman",
-      "SK": "PROFILE#batman",
-      "nickname": "batman",
-      "name": "Batman",
-      "real_name": "Bruce Wayne",
-      "description": "Batman is a superhero appearing in American comic books published by DC Comics.Batman is a superhero appearing in American comic books published by DC Comics.",
-      "age": 28
-    }
-  ],
-  "comics": [
-    {
-      "PK": "CHARACTER#greenlantern",
-      "SK": "COMIC#ac285877",
-      "nickname": "greenlantern",
-      "comic_id": "ac285877",
-      "title": "Green Lantern: Earth One",
-      "description": "In the newest installment of the hit Earth One original graphic novel line, creators Gabriel Hardman and Corinna Bechko (Invisible Republic, Star Wars: Legacy) reimagine Hal Jordan and the Green Lantern"
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "CHARACTER#batman"
+          },
+          "SK": {
+            "S": "PROFILE#batman"
+          },
+          "nickname": {
+            "S": "batman"
+          },
+          "name": {
+            "S": "Batman"
+          },
+          "real_name": {
+            "S": "Bruce Wayne"
+          },
+          "description": {
+            "S": "Batman is a superhero appearing in American comic books published by DC Comics.Batman is a superhero appearing in American comic books published by DC Comics."
+          },
+          "age": {
+            "N": "28"
+          }
+        }
+      }
     },
     {
-      "PK": "CHARACTER#greenlantern",
-      "SK": "COMIC#58f59aa1",
-      "nickname": "greenlantern",
-      "comic_id": "58f59aa1",
-      "title": "Green Lantern: New Guardians",
-      "description": "Green Lantern: New Guardians is an American comic book series originally written by Tony Bedard with art by Tyler Kirkham and Batt and published by DC Comics. The team consists of representatives of each of the Corps that tap into a particular portion of the emotional spectrum."
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "CHARACTER#greenlantern"
+          },
+          "SK": {
+            "S": "COMIC#ac285877"
+          },
+          "nickname": {
+            "S": "greenlantern"
+          },
+          "comic_id": {
+            "S": "ac285877"
+          },
+          "title": {
+            "S": "Green Lantern: Earth One"
+          },
+          "description": {
+            "S": "In the newest installment of the hit Earth One original graphic novel line, creators Gabriel Hardman and Corinna Bechko (Invisible Republic, Star Wars: Legacy) reimagine Hal Jordan and the Green Lantern"
+          }
+        }
+      }
     },
     {
-      "PK": "CHARACTER#greenlantern",
-      "SK": "COMIC#fa198289",
-      "nickname": "greenlantern",
-      "comic_id": "fa198289",
-      "title": "Green Lantern Versus Aliens",
-      "description": "Green Lantern versus Aliens is a four-issue comic book intercompany crossover mini-series published jointly by DC Comics and Dark Horse Comics monthly from September to December 2000."
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "CHARACTER#greenlantern"
+          },
+          "SK": {
+            "S": "COMIC#58f59aa1"
+          },
+          "nickname": {
+            "S": "greenlantern"
+          },
+          "comic_id": {
+            "S": "58f59aa1"
+          },
+          "title": {
+            "S": "Green Lantern: New Guardians"
+          },
+          "description": {
+            "S": "Green Lantern: New Guardians is an American comic book series originally written by Tony Bedard with art by Tyler Kirkham and Batt and published by DC Comics. The team consists of representatives of each of the Corps that tap into a particular portion of the emotional spectrum."
+          }
+        }
+      }
     },
     {
-      "PK": "CHARACTER#batman",
-      "SK": "COMIC#b48988f8",
-      "comic_id": "b48988f8",
-      "nickname": "batman",
-      "title": "Batman: The Killing Joke",
-      "description": "The Killing Joke is a 1988 DC Comics one-shot graphic novel featuring the characters Batman and the Joker written by Alan Moore and illustrated by Brian Bolland."
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "CHARACTER#greenlantern"
+          },
+          "SK": {
+            "S": "COMIC#fa198289"
+          },
+          "nickname": {
+            "S": "greenlantern"
+          },
+          "comic_id": {
+            "S": "fa198289"
+          },
+          "title": {
+            "S": "Green Lantern Versus Aliens"
+          },
+          "description": {
+            "S": "Green Lantern versus Aliens is a four-issue comic book intercompany crossover mini-series published jointly by DC Comics and Dark Horse Comics monthly from September to December 2000."
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "CHARACTER#batman"
+          },
+          "SK": {
+            "S": "COMIC#b48988f8"
+          },
+          "comic_id": {
+            "S": "b48988f8"
+          },
+          "nickname": {
+            "S": "batman"
+          },
+          "title": {
+            "S": "Batman: The Killing Joke"
+          },
+          "description": {
+            "S": "The Killing Joke is a 1988 DC Comics one-shot graphic novel featuring the characters Batman and the Joker written by Alan Moore and illustrated by Brian Bolland."
+          }
+        }
+      }
     }
   ]
 }
