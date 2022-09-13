@@ -58,11 +58,14 @@ docker-compose up -d --build
 
 - GET - http://localhost:8080/character
 - GET - http://localhost:8080/character/profile/{nickname}
+- GET - http://localhost:8080/comics
 - GET - http://localhost:8080/comics/{nickname}
 
 ``` bash
 curl --location --request GET 'http://localhost:8080/character/profile/greenlantern'
 ```
+
+Postman Collection: [Comics.postman_collection.json](./files/Comics.postman_collection.json)
 
 ## Notes
 

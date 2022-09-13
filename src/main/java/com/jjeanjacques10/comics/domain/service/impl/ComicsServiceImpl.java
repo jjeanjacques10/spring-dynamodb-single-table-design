@@ -16,7 +16,7 @@ public class ComicsServiceImpl implements ComicsService {
 
     @Override
     public List<ComicsEntity> getAllComics() {
-        return null;
+        return comicsRepository.getAllComics();
     }
 
     @Override

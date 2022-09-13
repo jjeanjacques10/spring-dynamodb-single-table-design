@@ -16,7 +16,8 @@ public class CharacterServiceImpl implements CharacterService {
 
     @Override
     public List<CharacterEntity> getAllCharacters() {
-        return characterRepository.findAll();
+        return characterRepository.findAll().stream()
+                .filter(c -> c.getSk().contains("PROFILE#")).toList();
     }
 
     @Override
