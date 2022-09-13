@@ -8,6 +8,10 @@
     {
       "AttributeName": "SK",
       "AttributeType": "S"
+    },
+    {
+      "AttributeName": "type",
+      "AttributeType": "S"
     }
   ],
   "KeySchema": [
@@ -26,7 +30,7 @@
   },
   "GlobalSecondaryIndexes": [
     {
-      "IndexName": "comics_index",
+      "IndexName": "characters_index",
       "KeySchema": [
         {
           "AttributeName": "SK",
@@ -34,6 +38,26 @@
         },
         {
           "AttributeName": "PK",
+          "KeyType": "RANGE"
+        }
+      ],
+      "Projection": {
+        "ProjectionType": "ALL"
+      },
+      "ProvisionedThroughput": {
+        "ReadCapacityUnits": 10,
+        "WriteCapacityUnits": 10
+      }
+    },
+    {
+      "IndexName": "comics_index",
+      "KeySchema": [
+        {
+          "AttributeName": "type",
+          "KeyType": "HASH"
+        },
+        {
+          "AttributeName": "SK",
           "KeyType": "RANGE"
         }
       ],

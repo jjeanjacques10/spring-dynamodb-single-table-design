@@ -63,6 +63,9 @@
           "SK": {
             "S": "COMIC#ac285877"
           },
+          "type": {
+            "S": "COMIC"
+          },
           "nickname": {
             "S": "greenlantern"
           },
@@ -86,6 +89,9 @@
           },
           "SK": {
             "S": "COMIC#58f59aa1"
+          },
+          "type": {
+            "S": "COMIC"
           },
           "nickname": {
             "S": "greenlantern"
@@ -111,6 +117,9 @@
           "SK": {
             "S": "COMIC#fa198289"
           },
+          "type": {
+            "S": "COMIC"
+          },
           "nickname": {
             "S": "greenlantern"
           },
@@ -134,6 +143,9 @@
           },
           "SK": {
             "S": "COMIC#b48988f8"
+          },
+          "type": {
+            "S": "COMIC"
           },
           "comic_id": {
             "S": "b48988f8"
