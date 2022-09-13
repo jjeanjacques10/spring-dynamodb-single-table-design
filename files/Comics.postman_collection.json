@@ -7,6 +7,33 @@
 	},
 	"item": [
 		{
+			"name": "Get profile and comics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/character/comics/:character",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"character",
+						"comics",
+						":character"
+					],
+					"variable": [
+						{
+							"key": "character",
+							"value": "greenlantern"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get all characters",
 			"request": {
 				"method": "GET",
@@ -31,7 +58,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/character/profile/greenlantern",
+					"raw": "http://localhost:8080/character/profile/:character",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -40,7 +67,13 @@
 					"path": [
 						"character",
 						"profile",
-						"greenlantern"
+						":character"
+					],
+					"variable": [
+						{
+							"key": "character",
+							"value": "greenlantern"
+						}
 					]
 				}
 			},

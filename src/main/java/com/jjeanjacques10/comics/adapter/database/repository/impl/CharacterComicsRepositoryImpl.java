@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
+import software.amazon.awssdk.enhanced.dynamodb.Key;
 import software.amazon.awssdk.enhanced.dynamodb.TableSchema;
+import software.amazon.awssdk.enhanced.dynamodb.model.QueryConditional;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
@@ -27,8 +29,9 @@ public class CharacterComicsRepositoryImpl implements CharacterComicsRepository 
     }
 
     @Override
-    public List<CharacterComicsEntity> findAll() {
-        return table.scan().stream().findFirst().orElseThrow().items();
+    public List<CharacterComicsEntity> getComicsProfile(String nickname) {
+        var key = Key.builder().partitionValue("CHARACTER#" + nickname).build();
+        return table.query(QueryConditional.keyEqualTo(key)).items().stream().toList();
     }
 
 }

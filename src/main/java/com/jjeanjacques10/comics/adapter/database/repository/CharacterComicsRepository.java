@@ -5,5 +5,5 @@ import com.jjeanjacques10.comics.adapter.database.entity.CharacterComicsEntity;
 import java.util.List;
 
 public interface CharacterComicsRepository {
-    List<CharacterComicsEntity> findAll();
+    List<CharacterComicsEntity> getComicsProfile(String nickname);
 }
