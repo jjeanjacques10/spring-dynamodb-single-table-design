@@ -74,6 +74,10 @@ Postman Collection: [Comics.postman_collection.json](./files/Comics.postman_coll
     - Simple primary keys are consist of a partition key and no sort key.
     - Composite primary keys have both a partition key and a sort key.
 
+## Article
+
+- [[PT-BR] DynamoDB Single-Table Design com Spring Boot](https://jjeanjacques10.medium.com/dynamodb-single-table-design-com-spring-boot-4d4af58221b6)
+
 ## References
 
 - [The What, Why, and When of Single-Table Design with DynamoDB](https://www.alexdebrie.com/posts/dynamodb-single-table/)
